@@ -5,8 +5,6 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'plugin:jest/recommended',
-    'plugin:jest/style',
     'airbnb',
   ],
   parserOptions: {
@@ -20,21 +18,5 @@ module.exports = {
     'react',
   ],
   rules: {
-    'import/prefer-default-export': 'off',
-    'no-tabs': ['error', { allowIndentationTabs: true }],
-    indent: ['warn', 2],
-    'linebreak-style': ['warn', 'unix'],
-    quotes: ['warn', 'single'],
-    semi: ['warn', 'always'],
-    'react/react-in-jsx-scope': 'warn',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/jsx-indent': [2, 2, { checkAttributes: true, indentLogicalExpressions: true }],
-    'react/jsx-indent-props': [2, 2],
-    'react/jsx-uses-react': 'warn',
-    'jest/no-disabled-tests': 'warn',
-    'jest/no-focused-tests': 'error',
-    'jest/no-identical-title': 'error',
-    'jest/prefer-to-have-length': 'warn',
-    'jest/valid-expect': 'error',
   },
 };
